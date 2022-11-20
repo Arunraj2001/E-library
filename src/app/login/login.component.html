@@ -1,0 +1,22 @@
+<div>
+  <form [formGroup]="logfrm" (ngSubmit)="logbtn()">
+    <div>
+      <label for="name">USERNAME</label>
+      <input type="text" name="name" id="name" formControlName="username">
+    </div>
+    <div>
+      <span *ngIf="(!logfrm.controls.username?.valid)&&(logfrm.controls.username?.dirty)" class="useerr">We'll never
+        share your email with anyone else.</span>
+    </div>
+    <div>
+      <label for="password">PASSWORD</label>
+      <input type="password" name="psw" id="password" formControlName="password">
+    </div>
+    <div>
+      <button type="submit" [disabled]="!logfrm.valid">LOGIN</button>
+    </div>
+    <p *ngIf="userinvalid">
+      <span style="color: red;">INVALID USER,PLEASE PRIVE THE CORRECT VALUE</span>
+    </p>
+  </form>
+</div>
