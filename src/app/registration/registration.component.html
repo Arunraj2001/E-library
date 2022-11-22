@@ -1,1 +1,25 @@
-<p>registration works!</p>
+
+<div class="header">
+    <h1 class="reg"><b>REGISTER</b></h1>
+    <form [formGroup]="frmgrp" (ngSubmit)="regbtn()">
+        <div class="mb-3">
+            <label for="FULLNAME" class="form-label"><b>FIRSTNAME</b></label>
+            <input  type="text" class="form-control" id="name" formControlName="firstname">
+          </div>
+          <div class="mb-3">
+            <label for="lastname" class="form-label"><b>LAST NAME</b></label>
+            <input  type="text" class="form-control"  id="lname" formControlName="lastname">
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label"><b>EMAIL ID </b></label>
+            <input type="email" class="form-control"  id="mail" formControlName="email">
+          </div>
+          <div class="mb-3">
+            <label for="password" class="form-label"><b>PASSWORD</b></label>
+            <input type="password" class="form-control form-control-sm" id="pwd" formControlName="password"> 
+          </div>
+          <div class="btn">
+           <button type="submit" class="btn btn-primary" [disabled]="!frmgrp.valid">REGISTER</button>
+          </div>
+    </form>
+</div>

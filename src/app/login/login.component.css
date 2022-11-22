@@ -1,0 +1,18 @@
+.header{
+    border: 1px solid rgb(172, 15, 15);
+    border-radius:10px;
+    width: 30%;
+    margin: auto;
+    padding-left: 1%;
+    font-size: larger;
+    padding-top: 2%;
+    margin-top:4%;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQr-9bWSdIN52oycSgpP2k5qU1bxvAfMzDsLQ&usqp=CAU");
+}
+label{
+    color: rgb(249, 245, 245);
+}
+
+.btn{
+    color: white;
+}

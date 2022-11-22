@@ -1,0 +1,25 @@
+ .header{
+    border: 1px solid rgb(172, 15, 15);
+    border-radius:10px;
+    width: 35%;
+
+    margin: auto;
+    padding: 10px;
+    margin-top: 4%;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQI5Jb9fo_-4vKGEr6BdkrsyvK4wRb1v5dahHfXZ62igM9R_bT5WidGOXK-vQcWMwVx15A&usqp=CAU");
+}
+
+label{
+    font-size: larger;
+    font-style: bold;
+    color: rgb(253, 249, 249);
+}
+
+.btn{
+    color: rgb(27, 2, 2);
+}
+
+.reg{
+    text-align: center;
+    color: rgb(16, 1, 1);
+} 

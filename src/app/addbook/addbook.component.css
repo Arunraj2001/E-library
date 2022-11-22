@@ -1,0 +1,31 @@
+.header{
+    border: 1px solid rgb(172, 15, 15);
+    border-radius:10px;
+    width: 35%;
+
+    margin: auto;
+    padding: 10px;
+    margin-top: 4%;
+    background-image: url("https://thumbs.dreamstime.com/b/wood-background-wallpaper-hd-123273980.jpg");
+}
+
+label{
+    color: rgb(245, 242, 242);
+}
+
+.btn{
+    
+    color: rgb(7, 1, 15);
+}
+
+.reg{
+    text-align: center;
+    color: rgb(14, 1, 1);
+} 
+
+table,tr,td,th{
+    border: 1px solid black;
+    border-collapse: collapse;
+   
+    
+}

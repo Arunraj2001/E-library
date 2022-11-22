@@ -1,0 +1,38 @@
+.stybtn{
+    width: 100%;
+    border: 1px solid rgb(248, 248, 248);
+    box-sizing:border-box;
+    overflow: auto;
+    margin-bottom:1%;
+    background-color: rgb(29, 29, 31);
+}
+.btnsty li{
+list-style-type: none;
+font-size:larger;
+overflow: auto;
+float: left;
+padding: 1vw;
+margin-bottom: 1vw;
+color: white;
+}
+.comapact{
+    color:rgb(226, 30, 30) !important;
+    text-decoration: underline;
+}
+
+.btnsty a{
+    text-decoration: none;
+    color: white;
+    overflow:auto;
+}
+.container-fluid{
+    background-color: rgb(8, 8, 8);
+}
+ul li a{
+    color: aliceblue;
+}
+.btnbtnoutlinesuccess{
+    color: aquamarine;
+}
+
+ 

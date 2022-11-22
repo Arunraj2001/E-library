@@ -19,7 +19,11 @@ export class LoginComponent implements OnInit {
 
 
 ngOnInit(): void {
-
+  let username = localStorage.getItem('usrnm');
+  console.log(`user name is ${username}`);
+  let sessionusernm = sessionStorage.getItem('usernmsession');
+  console.log(`sessionstorage user name is ${sessionusernm}`);
+  
 }
 logbtn(){
 console.log(this.logfrm.value)
@@ -29,7 +33,8 @@ this.userinvalid = true;
 else{
   this.userinvalid=false;
   localStorage.setItem('usrnm',this.logfrm.controls.username.value);
-  this.rot.navigateByUrl('/register');
+  this.rot.navigateByUrl('/addbook');
+  sessionStorage.setItem('usernmsession',this.logfrm.controls.username.value)
 }
 }
 }

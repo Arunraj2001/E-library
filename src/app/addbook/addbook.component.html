@@ -1,1 +1,48 @@
-<p>addbook works!</p>
+<div class="header">
+    <h1 class="reg"><b>ADD BOOK</b></h1>
+    <form [formGroup]="addbk" (ngSubmit)="addbok()">
+        <div class="mb-3">
+            <label for="name" class="form-label"><b>BOOK ID</b></label>
+            <input type="text" class="form-control"  id="name" formControlName="bookid">
+          </div>
+          <div class="mb-3">
+            <label for="booknm" class="form-label"><b>BOOK TITLE</b></label>
+            <input class="form-control" type="text" id="booknm" formControlName="booktitle">
+          </div>
+          <div class="mb-3">
+            <label for="bookdesc" class="form-label"><b>BOOK DESC</b></label>
+            <input class="form-control" type="text" id="book" formControlName="bookdesc">
+          </div>
+          <div class="mb-3">
+            <label for="authnm" class="form-label"><b>AUTHOR NAME</b></label>
+            <input class="form-control form-control-sm" id="authnm" type="text" formControlName="authname">
+          </div>
+          <div>
+            <label for="avabk" class="form-label"><b>AVAILABLE BOOK</b></label>
+            <input class="form-control form-control-lg" id="avabk" type="text" formControlName="nmbook">
+          </div>
+          <div class="btn">
+            <button type="submit" [disabled]="!addbk.valid">ADD BOOK</button>
+          </div>
+    </form>
+</div>
+<table class="table">
+  <thead>
+    <tr> 
+      <th scope="col">BOOK ID</th>
+      <th scope="col">BOOK TITLE</th>
+      <th scope="col">BOOK DESC</th>
+      <th scope="col">AUTHOR NAME</th>
+      <th scope="col">AVALABLE BOOK</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let b of mybooks">
+      <td>{{b.bookid}}</td>
+      <td>{{b.booktitle}}</td>
+      <td>{{b.bookdesc}}</td>
+      <td>{{b.authname}}</td>
+      <td>{{b.nmbook}}</td>
+    </tr>
+    </tbody>
+  </table>
