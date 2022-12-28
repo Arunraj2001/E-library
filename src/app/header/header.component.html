@@ -5,9 +5,12 @@
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <a  routerLink="/home" routerLinkActive="comapact" class="navbar-brand" href="#">HOME</a>
+          
           <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a  routerLink="/home" routerLinkActive="comapact" class="nav-link active" href="#">HOME</a>
+              </li>
               <li class="nav-item">
                 <a routerLink="/login" routerLinkActive="comapact" class="nav-link active" aria-current="page" href="#">LOGIN</a>
               </li>
@@ -17,14 +20,15 @@
               <li class="nav-item">
                 <a routerLink="/about" routerLinkActive="comapact" class="nav-link">ABOUT</a>
               </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+           
+           <li class="nav-item"> <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search"  placeholder="Search" aria-label="Search">
               <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
+            </form></li>
+          </ul>
             <div>
             <li class="postion-absolute end-0">
-              <a  href="#"  (click)="logout()"><i class="fa-solid fa-right-from-bracket"></i></a>
+              <a id="logoutBtn" href="#"  (click)="logout()"><i class="fa-solid fa-right-from-bracket"></i></a>
          </li>
         </div>
           </div>
